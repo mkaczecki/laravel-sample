@@ -31,8 +31,3 @@ Route::get('/companies/create', [App\Http\Controllers\CompaniesController::class
 Route::post('/companies', [App\Http\Controllers\CompaniesController::class, 'store']);
 Route::get('/companies/{user}', [App\Http\Controllers\CompaniesController::class, 'show']);
 
-
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
